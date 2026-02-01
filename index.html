@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chemovik — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo" aria-hidden="true">
+    <!-- inline simple animated logo -->
+    <svg viewBox="0 0 64 64" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+      <g transform="translate(8,8)">
+        <circle cx="24" cy="24" r="6" fill="#b2d235" />
+        <path d="M24 0 L24 12" stroke="#fff" stroke-width="2" stroke-linecap="round" transform="rotate(0 24 24)"/>
+      </g>
+    </svg>
+  </div>
+  <div class="loader-text">Chemovik — Loading lab assets</div>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="brand" onclick="location.href='index.html'">
+      <!-- logo.svg should be placed in assets/logo.svg -->
+      <div class="logo-anim" title="Chemovik logo">
+        <img src="assets/logo.svg" alt="Chemovik logo" width="60" height="60" />
+      </div>
+      <div>
+        <h1>Chemovik</h1>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.7)">Waste → Biosorbents → Clean Future</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="biosorb.html">BioSorb</a>
+      <a href="research.html">Research</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" aria-label="Main hero">
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="hero-inner">
+    <div class="hero-card" style="z-index:2">
+      <h2>Turning waste into breathable futures — <span style="color:var(--accent)">Bio-powered adsorption</span></h2>
+      <p class="lead">We engineer low-cost biosorbents from agricultural and industrial byproducts to clean water and air. Our prototypes are lightweight, scalable, and designed for community-level impact.</p>
+
+      <div class="hero-cta">
+        <a href="biosorb.html" class="btn">Explore BioSorb</a>
+        <a href="#projects" class="btn btn-ghost">See Projects</a>
+        <a href="contact.html" class="btn">Collaborate</a>
+      </div>
+
+      <div class="timeline" style="margin-top:18px">
+        <div class="step"><strong>Quick demo:</strong> Adsorption testing on wastewater samples — 92% removal in lab prototype.</div>
+      </div>
+    </div>
+
+    <aside class="right-panel" style="z-index:2">
+      <div class="stat">
+        <h3>Prototype Count</h3>
+        <p>3 lab prototypes — activated-carbon like behavior from banana peels & husks.</p>
+      </div>
+
+      <div class="stat">
+        <h3>Collaborators</h3>
+        <p>Students · local labs · mentors</p>
+      </div>
+
+      <div class="stat">
+        <h3>Get Involved</h3>
+        <p>Open calls for interns. Design, testing, outreach roles.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" aria-label="Features">
+  <div class="features-grid">
+    <div class="feature">
+      <img src="assets/recycle.png" alt="recycle icon">
+      <h4>Waste-first approach</h4>
+      <p>We repurpose agricultural waste into adsorbent materials — cheap and renewable.</p>
+    </div>
+    <div class="feature">
+      <img src="assets/filter.gif" alt="filter">
+      <h4>Water & Air</h4>
+      <p>Designs that work for water filtration and airborne particle capture.</p>
+    </div>
+    <div class="feature">
+      <img src="assets/cert.png" alt="certificate">
+      <h4>Research-backed</h4>
+      <p>Methodology documented with test data and certificates of completion.</p>
+    </div>
+    <div class="feature">
+      <img src="assets/gallery1.jpg" alt="gallery">
+      <h4>Community-first</h4>
+      <p>Pilot programs aimed at local communities with low-cost deployment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="cards">
+    <div class="card">
+      <h3>BioSorb — Adsorbent sheets</h3>
+      <p>Thin sheets made from processed agricultural husk, activated by low-temperature carbonization. Target: dye removal and heavy metals.</p>
+      <div class="card-cta">
+        <a class="btn" href="biosorb.html">Project details</a>
+        <a class="btn btn-ghost" href="research.html">Read lab notes</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>AirTrap — Room purifier insert</h3>
+      <p>Replaceable cartridge using biosorbent granules for dust and VOC reduction in enclosed spaces.</p>
+      <div class="card-cta">
+        <a class="btn" href="research.html">Testing</a>
+        <a class="btn btn-ghost" href="contact.html">Join testing</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Community Filters</h3>
+      <p>Low-cost filters for village water supply points using layered biosorbent media.</p>
+      <div class="card-cta">
+        <a class="btn" href="contact.html">Deploy with us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission" aria-label="Mission">
+  <div>
+    <h3 style="margin-top:0">Our Mission</h3>
+    <p>To build accessible, low-cost purification systems using materials otherwise discarded. We combine chemistry, local sourcing, and open collaboration to produce practical solutions.</p>
+
+    <div style="display:flex;gap:10px;margin-top:12px;">
+      <a class="btn" href="about.html">Learn more</a>
+      <a class="btn btn-ghost" href="certificates.html">Our credentials</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW -->
+<section style="padding:40px 20px;">
+  <div class="container" style="max-width:var(--max-w);">
+    <h3 style="margin:0 0 12px">Gallery</h3>
+    <div class="gallery-grid">
+      <img data-preview data-src="assets/gallery1.jpg" src="assets/gallery1.jpg" style="width:100%;height:170px;object-fit:cover;border-radius:10px;cursor:pointer"/>
+      <img data-preview data-src="assets/gallery2.jpg" src="assets/gallery2.jpg" style="width:100%;height:170px;object-fit:cover;border-radius:10px;cursor:pointer"/>
+      <img data-preview data-src="assets/gallery1.jpg" src="assets/gallery1.jpg" style="width:100%;height:170px;object-fit:cover;border-radius:10px;cursor:pointer"/>
+      <img data-preview data-src="assets/gallery2.jpg" src="assets/gallery2.jpg" style="width:100%;height:170px;object-fit:cover;border-radius:10px;cursor:pointer"/>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW MODAL -->
+<div id="preview" style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.75);z-index:1200;opacity:0;pointer-events:none;transition:all .2s">
+  <div style="max-width:900px;width:90%;position:relative">
+    <button id="preview-close" style="position:absolute;right:-8px;top:-8px;background:var(--accent);border:none;padding:8px;border-radius:10px;font-weight:700;cursor:pointer">X</button>
+    <img src="" alt="preview" style="width:100%;border-radius:12px;display:block;"/>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="foot-inner">
+    <div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <div style="width:46px;height:46px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));display:flex;align-items:center;justify-content:center">
+          <img src="assets/logo.svg" alt="logo" style="width:34px;height:34px"/>
+        </div>
+        <div>
+          <div style="font-weight:800">Chemovik</div>
+          <div style="font-size:0.9rem;color:rgba(255,255,255,0.7)">Sustainable biosorbents</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="small">© 2025 Chemovik • Built with heart</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Small UI tweaks: preview open behaviour
+  (function(){
+    const preview = document.getElementById('preview');
+    window.openImagePreview = function(src){
+      preview.querySelector('img').src = src;
+      preview.style.opacity = 1; preview.style.pointerEvents = 'auto';
+      preview.classList.add('open');
+    }
+    document.querySelectorAll('[data-preview]').forEach(el=>{
+      el.addEventListener('click', ()=>{
+        openImagePreview(el.getAttribute('data-src'));
+      });
+    });
+    document.getElementById('preview-close').addEventListener('click', ()=>{
+      preview.style.opacity = 0; preview.style.pointerEvents = 'none';
+    });
+  })();
+</script>
+</body>
+</html>
